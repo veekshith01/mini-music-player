@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.player-box {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.player-box img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+h2,
+h3 {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.buttons {
+  margin: 15px 0;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  color: #1db954;
+  font-size: 26px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  transform: scale(1.2);
+  color: #1ed760;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.playlist {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 15px;
+  width: 200px;
+  max-height: 370px;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.playlist h3 {
+  margin-bottom: 10px;
+  color: #1db954;
+}
+
+.playlist ul {
+  list-style: none;
+}
+
+.playlist li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.playlist img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}

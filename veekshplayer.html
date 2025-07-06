@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--free icon website used for buttons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Now Playing</h1>
+    <div class="main-container">
+      <div class="player-box">
+        <img id="cover" src="covers/chill.jpg" alt="cover" width="200" />
+        <h2 id="title">Song Title</h2>
+        <h3 id="artist">Artist</h3>
+
+        <audio id="audio" src="beats/chill.mp3"></audio>
+
+        <div class="buttons">
+          <button id="prev"><i class="ri-skip-back-fill"></i></button>
+          <button id="play"><i class="ri-play-fill"></i></button>
+          <button id="next"><i class="ri-skip-forward-fill"></i></button>
+        </div>
+
+        <div class="progress">
+          <span id="curr-time">0:00</span>
+          <input type="range" id="progress-bar" value="0" />
+          <span id="dur-time">0:00</span>
+        </div>
+      </div>
+
+      <!-- Playlist part -->
+      <div class="playlist">
+        <h3>Playlist</h3>
+        <ul id="playlist"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
